@@ -20,7 +20,7 @@ public class DemoqaForm {
     WebElement userEmail;
     
     @FindBy(id="userNumber")
-    WebElement userNumber
+    WebElement userNumber;
 
     public DemoqaForm(WebDriver driverParam)
     {
@@ -30,11 +30,12 @@ public class DemoqaForm {
 
     public void setGender(String genderParam){
         WebElement gen=driver.findElement(By.xpath("//*[@id='genterWrapper']//label[text()='"+genderParam +"']"));
-    gender.click();
+    genter.click();
     }
 
-    public void set userNumber(set numberParam){
-        userNumber.clear();
+
+    public void setState(String state) {
+
     }
 
     public void setLastName(String lastNameParam)
